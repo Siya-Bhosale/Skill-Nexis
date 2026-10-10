@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "The Future of Artificial Intelligence",
+    "description": "Discover how AI is changing the way we work, learn, and solve everyday problems.",
+    "category": "Technology",
+    "author": "Aarav Sharma",
+    "date": "Oct 2, 2026",
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800"
+  },
+  {
+    "id": 2,
+    "title": "Building Better Daily Habits",
+    "description": "Small, consistent habits can help you become more productive and improve your lifestyle.",
+    "category": "Lifestyle",
+    "author": "Priya Mehta",
+    "date": "Sep 28, 2026",
+    "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800"
+  },
+  {
+    "id": 3,
+    "title": "Exploring the Beauty of the Mountains",
+    "description": "A travel guide to peaceful mountain destinations, scenic trails, and unforgettable adventures.",
+    "category": "Travel",
+    "author": "Rohan Patil",
+    "date": "Sep 24, 2026",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800"
+  },
+  {
+    "id": 4,
+    "title": "Simple Recipes for Busy Students",
+    "description": "Try quick, delicious, and affordable meals when you have a busy college schedule.",
+    "category": "Food",
+    "author": "Ananya Joshi",
+    "date": "Sep 20, 2026",
+    "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800"
+  },
+  {
+    "id": 5,
+    "title": "Web Development: Where to Begin",
+    "description": "Learn HTML, CSS, JavaScript, and React to start your coding journey.",
+    "category": "Technology",
+    "author": "Kabir Desai",
+    "date": "Sep 16, 2026",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+  },
+  {
+    "id": 6,
+    "title": "A Weekend Escape",
+    "description": "Plan a refreshing weekend getaway with beautiful places, local culture, and new experiences.",
+    "category": "Travel",
+    "author": "Meera Kulkarni",
+    "date": "Sep 12, 2026",
+    "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800"
+  }
+]
