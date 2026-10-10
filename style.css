@@ -1,4 +1,5 @@
 
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +14,11 @@ body {
     line-height: 1.6;
 }
 
+section {
+    scroll-margin-top: 85px;
+}
+
+/* Navigation Bar */
 header {
     background-color: #17172e;
     padding: 18px 8%;
@@ -21,7 +27,7 @@ header {
     z-index: 100;
 }
 
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,23 +38,35 @@ nav {
     font-size: 28px;
 }
 
-nav ul {
+.nav-links {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 25px;
 }
 
-nav ul li a {
+.nav-links a {
     color: white;
     text-decoration: none;
     font-size: 15px;
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
+.nav-links a:hover {
     color: #a78bfa;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+/* Home Section */
 .hero {
     min-height: 85vh;
     display: flex;
@@ -99,6 +117,7 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
+/* Common Section Styles */
 .section {
     padding: 70px 10%;
     text-align: center;
@@ -110,12 +129,14 @@ nav ul li a:hover {
     color: #37306b;
 }
 
+/* About Section */
 .about-content {
     max-width: 800px;
     margin: auto;
     font-size: 17px;
 }
 
+/* Skills Section */
 .skills-section {
     background-color: #eeecfa;
 }
@@ -142,9 +163,10 @@ nav ul li a:hover {
     transform: translateY(-4px);
 }
 
+/* Projects Section */
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 22px;
 }
 
@@ -166,12 +188,14 @@ nav ul li a:hover {
     margin-bottom: 12px;
 }
 
+/* Contact Section */
 .contact-section {
     background-color: #eeecfa;
 }
 
 .contact-section p {
     margin: 12px 0;
+    overflow-wrap: anywhere;
 }
 
 .contact-section a {
@@ -183,6 +207,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Footer */
 footer {
     background-color: #17172e;
     color: white;
@@ -190,27 +215,73 @@ footer {
     padding: 20px;
 }
 
+/* Responsive Navigation and Layout */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        gap: 15px;
+    header {
+        padding: 15px 6%;
     }
 
-    nav ul {
+    .navbar {
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 0;
+        padding-top: 15px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 12px 0;
+        border-top: 1px solid #37306b;
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 16px;
+    }
+
+    .hero {
+        min-height: 75vh;
+        padding: 55px 7%;
     }
 
     .hero h1 {
         font-size: 38px;
     }
 
+    .section {
+        padding: 50px 6%;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
     .projects-container {
         grid-template-columns: 1fr;
     }
+}
 
-    .section {
-        padding: 50px 6%;
+/* Small Mobile Screens */
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .skill {
+        padding: 10px 15px;
     }
 }
