@@ -1,0 +1,287 @@
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fc;
+    color: #252541;
+    line-height: 1.6;
+}
+
+section {
+    scroll-margin-top: 85px;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #17172e;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #a78bfa;
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a78bfa;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+/* Home Section */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(135deg, #17172e, #37306b);
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.intro {
+    color: #c4b5fd;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+.hero h3 {
+    color: #c4b5fd;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.intro) {
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #a78bfa;
+    color: #17172e;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+/* Common Section Styles */
+.section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #37306b;
+}
+
+/* About Section */
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    font-size: 17px;
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #eeecfa;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background-color: white;
+    padding: 14px 25px;
+    border-radius: 8px;
+    border: 1px solid #d9d2fa;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #37306b;
+    color: white;
+    transform: translateY(-4px);
+}
+
+/* Projects Section */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 28px 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.13);
+}
+
+.project-card h3 {
+    color: #6d55c7;
+    margin-bottom: 12px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #eeecfa;
+}
+
+.contact-section p {
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
+
+.contact-section a {
+    color: #6d55c7;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #17172e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Navigation and Layout */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 6%;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 0;
+        padding-top: 15px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 12px 0;
+        border-top: 1px solid #37306b;
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 16px;
+    }
+
+    .hero {
+        min-height: 75vh;
+        padding: 55px 7%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .section {
+        padding: 50px 6%;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .skill {
+        padding: 10px 15px;
+    }
+}

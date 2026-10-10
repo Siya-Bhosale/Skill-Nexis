@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">ShopEase<span>.</span></h2>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#products" class="cart">
+                🛒 Cart (<span id="cartCount">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="tagline">YOUR STYLE, YOUR CHOICE</p>
+                <h1>Discover Products You'll Love</h1>
+                <p>
+                    Shop the latest trends in fashion, electronics and
+                    lifestyle products at amazing prices.
+                </p>
+                <a href="#products" class="btn">Shop Now →</a>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80"
+                    alt="Modern shopping store">
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-list">
+                <a href="#products" class="category">👕<span>Fashion</span></a>
+                <a href="#products" class="category">🎧<span>Electronics</span></a>
+                <a href="#products" class="category">⌚<span>Accessories</span></a>
+                <a href="#products" class="category">🏠<span>Home & Living</span></a>
+            </div>
+        </section>
+
+        <section class="products-section" id="products">
+            <div class="section-heading">
+                <div>
+                    <p class="tagline">HANDPICKED FOR YOU</p>
+                    <h2>Featured Products</h2>
+                </div>
+                <p>Find your next favourite product.</p>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+                        alt="Red sports shoes">
+                    <div class="product-info">
+                        <p class="product-category">Footwear</p>
+                        <h3>Classic Sports Shoes</h3>
+                        <div class="price-row">
+                            <span class="price">₹1,499</span>
+                            <span class="old-price">₹2,499</span>
+                        </div>
+                        <button class="add-cart" data-product="Classic Sports Shoes">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                        alt="Wireless headphones">
+                    <div class="product-info">
+                        <p class="product-category">Electronics</p>
+                        <h3>Wireless Headphones</h3>
+                        <div class="price-row">
+                            <span class="price">₹2,199</span>
+                            <span class="old-price">₹3,499</span>
+                        </div>
+                        <button class="add-cart" data-product="Wireless Headphones">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+                        alt="Elegant wristwatch">
+                    <div class="product-info">
+                        <p class="product-category">Accessories</p>
+                        <h3>Classic Wristwatch</h3>
+                        <div class="price-row">
+                            <span class="price">₹1,799</span>
+                            <span class="old-price">₹2,999</span>
+                        </div>
+                        <button class="add-cart" data-product="Classic Wristwatch">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80"
+                        alt="White casual t-shirt">
+                    <div class="product-info">
+                        <p class="product-category">Fashion</p>
+                        <h3>Casual Cotton T-Shirt</h3>
+                        <div class="price-row">
+                            <span class="price">₹599</span>
+                            <span class="old-price">₹999</span>
+                        </div>
+                        <button class="add-cart" data-product="Casual Cotton T-Shirt">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="offer-section" id="offers">
+            <div>
+                <p>LIMITED-TIME OFFER</p>
+                <h2>Upgrade Your Everyday Style</h2>
+                <p>Explore selected products at exciting prices.</p>
+                <a href="#products" class="btn offer-btn">Explore Deals</a>
+            </div>
+            <div class="offer-emoji">🛍️</div>
+        </section>
+
+        <section class="benefits">
+            <div>
+                <span>🚚</span>
+                <h3>Free Delivery</h3>
+                <p>On eligible orders</p>
+            </div>
+            <div>
+                <span>🔒</span>
+                <h3>Secure Shopping</h3>
+                <p>Your privacy matters</p>
+            </div>
+            <div>
+                <span>💬</span>
+                <h3>Customer Support</h3>
+                <p>We're here to help</p>
+            </div>
+        </section>
+
+        <section class="newsletter" id="contact">
+            <h2>Stay in the Loop!</h2>
+            <p>Subscribe to receive updates about new products and offers.</p>
+
+            <form id="newsletterForm">
+                <input type="email" id="newsletterEmail"
+                    placeholder="Enter your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+
+            <p id="newsletterMessage" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <h2 class="logo">ShopEase<span>.</span></h2>
+        <p>Your everyday shopping destination.</p>
+        <p class="copyright">© 2026 ShopEase. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
